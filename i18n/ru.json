@@ -1,0 +1,27 @@
+{
+    "langs": {
+        "ru": {
+            "name": "Русский",
+            "icon": "openmoji:flag-russia"
+            },
+        "en": {
+            "name": "Английский",
+            "icon": "openmoji:flag-united-states"
+        }
+    },
+    "navbar": {
+        "russian": "Русский",
+        "english": "Английский"
+    },
+    "index": {
+        "main": {
+            "title": "Разработчик из России!",
+            "subtitle": "CI/CD & Server Administration\nИспользую Python, Go, Dart\nВолонтер в"
+        },
+        "donate": {
+            "QR": "Сканируйте QR-код для удобного перевода денег:",
+            "or": "ИЛИ",
+            "details": "Скопируйте реквизиты"
+        }
+    }
+}

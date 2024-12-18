@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    --_mesh-gradient-blend-mode: normal;
+
+    background: radial-gradient(at 51% 35%, #eb9cd9 0px, transparent 50%), radial-gradient(at 8% 6%, #eb9cb5 0px, transparent 50%), radial-gradient(at 84% 28%, #eba69c 0px, transparent 50%), radial-gradient(at 18% 98%, #ebc99c 0px, transparent 50%), radial-gradient(at 99% 8%, #ebeb9c 0px, transparent 50%), radial-gradient(at 35% 7%, #c7eb9c 0px, transparent 50%), radial-gradient(at 99% 57%, #a3eb9c 0px, transparent 50%), radial-gradient(at 60% 3%, #9cebb8 0px, transparent 50%), radial-gradient(at 77% 86%, #9cebd9 0px, transparent 50%), radial-gradient(at 85% 73%, #9cd9eb 0px, transparent 50%) #202020;
+    mix-blend-mode: var(--_mesh-gradient-blend-mode);
+  }

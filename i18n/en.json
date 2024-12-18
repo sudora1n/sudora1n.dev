@@ -1,0 +1,27 @@
+{
+    "langs": {
+        "ru": {
+            "name": "Russian",
+            "icon": "openmoji:flag-russia"
+            },
+        "en": {
+            "name": "English",
+            "icon": "openmoji:flag-united-states"
+        }
+    },
+    "navbar": {
+        "russian": "Russian",
+        "english": "English"
+    },
+    "index": {
+        "main": {
+            "title": "Young developer from Russia!",
+            "subtitle": "CI/CD & Server Administration\nProgrammer in Python, Go, Dart\nVolonter in"
+        },
+        "donate": {
+            "QR": "Scan the QR code to go to the payment page:",
+            "or": "OR",
+            "details": "Copy the details below"
+        }
+    }
+}
