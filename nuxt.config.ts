@@ -22,8 +22,10 @@ export default defineNuxtConfig({
     ]
   },
 
-  css: ['~/assets/main.css'],
-  modules: ['@nuxt/icon', '@nuxtjs/i18n', '@nuxt/content'],
+  css: [
+    "~/assets/main.css",
+  ],
+  modules: ["@pinia/nuxt", '@nuxt/icon', '@nuxtjs/i18n'],
 
   app: {
     head: {
@@ -33,6 +35,12 @@ export default defineNuxtConfig({
       },
       link: [
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32.png' },
+        { rel: "preconnect", href: "https://fonts.googleapis.com" },
+        { rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "anonymous" },
+        { 
+          rel: "stylesheet", 
+          href: "https://fonts.googleapis.com/css2?family=JetBrains+Mono"
+        },
       ]
     },
   },

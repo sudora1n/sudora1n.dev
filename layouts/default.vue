@@ -1,10 +1,12 @@
 <script setup lang="ts">
     const { locales } = useI18n()
     const switchLocalePath = useSwitchLocalePath()
+
+    const toastStore = useToastsStore()
 </script>
 
 <template>
-  <div class="flex flex-col min-h-screen backdrop-blur-3xl backdrop-brightness-[.85]">
+  <div class="flex flex-col min-h-screen backdrop-blur-3xl">
     <header class="navbar bg-base-100 static backdrop-blur-xl bg-opacity-25">
       <div class="flex-1">
         <NuxtLink class="btn btn-ghost text-xl" to="/">sudora1n.dev</NuxtLink>
@@ -41,4 +43,32 @@
     
     <!--<footer class="flex-col ml-1">sudora1n.dev</footer>-->
   </div>
+  <div class="toast toast-top toast-end">
+      <TransitionGroup name="toast-fade">
+        <div
+            v-for="toast in toastStore.toasts"
+            :key="toast.id" 
+            :class="toast.type"
+            class="alert"
+        >
+          <Toast><span v-text="toast.message" /></Toast>
+        </div>
+      </TransitionGroup>
+  </div>
 </template>
+
+<style scoped>
+  .toast-fade-enter-active {
+    transition: all 0.3s ease-out;
+  }
+
+  .toast-fade-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+  }
+
+  .toast-fade-enter-from,
+  .toast-fade-leave-to {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+</style>

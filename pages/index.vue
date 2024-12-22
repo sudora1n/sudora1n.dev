@@ -19,15 +19,14 @@
                 </div>
             </div>
             <div class="p-10 w-full">
-                <h1 class="text-lg sm:text-xl lg:text-3xl font-bold mb-2 sm:mb-4 lg:mb-6" v-text="$t('index.main.title')" />
+                <h1 class="text-lg sm:text-xl lg:text-3xl font-bold mb-2 sm:mb-4 lg:mb-6 zzz" v-text="$t('index.main.title')" />
                 <p class="text-sm sm:text-base lg:text-lg font-semibold whitespace-pre-line">
                     {{ $t("index.main.subtitle") }}
                     <NuxtLink class="link link-hover" to="https://t.me/tginfoen" target="_blank">Tginfo</NuxtLink>
                 </p>
                 <div class="mt-4 space-x-2">
-                    <NuxtLink class="btn btn-active" to="/donate">Donate</NuxtLink>
                     <DonateModal />
-                    <button class="btn btn-active">Sample</button>
+                    <button class="btn btn-secondary">Sample</button>
                 </div>
             </div>
         </div>

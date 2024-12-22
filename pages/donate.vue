@@ -6,7 +6,7 @@
         <div class="grid grid-cols-2 gap-4 items-center lg:flex-row max-h-[80vh]">
             <RotateCard />
             <RotateCard service="Tinkoff" />
-            <DonateModal />
+            <!--<DonateModal />-->
         </div>
     </div>
 </template>

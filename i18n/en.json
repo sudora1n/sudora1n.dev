@@ -19,9 +19,14 @@
             "subtitle": "CI/CD & Server Administration\nProgrammer in Python, Go, Dart\nVolonter in"
         },
         "donate": {
+            "button": "Donate",
             "QR": "Scan the QR code to go to the payment page:",
             "or": "OR",
-            "details": "Copy the details below"
+            "details": "Copy the details below",
+            "tooltip": {
+                "copy": "Copy",
+                "copied": "Copied!"
+            }
         }
     }
 }

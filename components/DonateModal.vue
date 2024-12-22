@@ -1,36 +1,23 @@
 <script setup lang="ts">
-    import type { ParsedContent } from '@nuxt/content';
+    import data from "~/public/data/donate.json"
 
     const modal = ref<HTMLDialogElement | null>(null)
-
     const activeTab = ref("")
-    const data = ref<Data[]>([])
-
-    interface Data {
-        title: string
-        details: string | number
-        url: string
-        logo: string
-    }
-    Math.ceil(data.value.length)
 
     onMounted(async () => {
-        const result = await queryContent("/data/donate").findOne() as ParsedContent
-        data.value = result.body as unknown as Data[]
-
-        const len = data.value.length
+        const len = data.length
         if (len > 0) {
             if (len & 1) {
-                activeTab.value = data.value[Math.floor(len/2)].title
+                activeTab.value = data[Math.floor(len/2)].title
             } else {
-                activeTab.value = data.value[0].title
+                activeTab.value = data[0].title
             }
         }
     })
 </script>
 
 <template>
-    <button class="btn" @click="modal?.showModal()">open modal</button>
+    <button class="btn btn-accent" @click="modal?.showModal()" v-text="$t('index.donate.button')" />
 
     <dialog ref="modal" class="modal modal-bottom sm:modal-middle">
         <div class="modal-box">
@@ -39,7 +26,7 @@
                     <Icon name="material-symbols:close-rounded" />
                 </button>
             </form>
-            <h3 class="text-center text-lg font-bold mb-2">Donate modal</h3>
+            <h3 class="text-center text-lg font-bold mb-2">Donate modal1</h3>
             <div role="tablist" class="tabs tabs-bordered">
                 <button
                     v-for="item in data"

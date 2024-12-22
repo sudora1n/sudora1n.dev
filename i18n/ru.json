@@ -19,9 +19,14 @@
             "subtitle": "CI/CD & Server Administration\nИспользую Python, Go, Dart\nВолонтер в"
         },
         "donate": {
+            "button": "Donate",
             "QR": "Сканируйте QR-код для удобного перевода денег:",
             "or": "ИЛИ",
-            "details": "Скопируйте реквизиты"
+            "details": "Скопируйте реквизиты",
+            "tooltip": {
+                "copy": "Скопировать",
+                "copied": "Скопировано!"
+            }
         }
     }
 }
