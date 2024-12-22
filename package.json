@@ -7,13 +7,20 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"{components,pages,plugins,middleware,layouts,composables,assets}/**/*.{js,jsx,ts,tsx,vue,html,css,scss,json,md}\""
   },
   "dependencies": {
     "@nuxt/icon": "1.10.1",
     "@nuxtjs/i18n": "9.0.0-rc.2",
+    "@nuxtjs/mdc": "0.11.1",
     "@pinia/nuxt": "0.9.0",
+    "@types/markdown-it": "^14.1.2",
     "@vueuse/integrations": "^12.0.0",
+    "highlight.js": "^11.11.0",
+    "markdown-it": "^14.1.0",
     "nuxt": "^3.14.1592",
     "pinia": "^2.3.0",
     "qr-code-styling": "^1.8.4",
@@ -23,9 +30,16 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@nuxt/eslint": "^0.7.4",
+    "@nuxt/eslint-config": "^0.7.4",
+    "@tailwindcss/typography": "^0.5.15",
     "autoprefixer": "^10.4.20",
     "daisyui": "^4.12.22",
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
     "postcss": "^8.4.49",
+    "prettier": "^3.4.2",
     "tailwindcss": "^3.4.16"
   }
 }

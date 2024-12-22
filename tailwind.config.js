@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -18,26 +18,24 @@ export default {
     extend: {
       fontFamily: {
         sans: ["JetBrains Mono", ...defaultTheme.fontFamily.sans],
-      }
-    }
+      },
+    },
   },
-  plugins: [
-    require('daisyui'),
-  ],
+  plugins: [require("daisyui"), require('@tailwindcss/typography'),],
   daisyui: {
     themes: [
       {
         light: {
           ...require("daisyui/src/theming/themes")["light"],
-          "primary": "#d3b4d6",
-          "secondary": "#b4d6d3",
+          primary: "#d3b4d6",
+          secondary: "#b4d6d3",
           "secondary-content": "black",
-          "accent": "#b7d6b4"
-        }
-      }
+          accent: "#b7d6b4",
+          "base-200": "#d3b4d6",
+        },
+      },
     ],
   },
 
-  darkMode: 'selector',
-}
-
+  darkMode: "selector",
+};
