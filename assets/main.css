@@ -15,7 +15,7 @@ body {
     radial-gradient(at 99% 57%, #a3eb9c 0px, transparent 50%),
     radial-gradient(at 60% 3%, #9cebb8 0px, transparent 50%),
     radial-gradient(at 77% 86%, #9cebd9 0px, transparent 50%),
-    radial-gradient(at 85% 73%, #9cd9eb 0px, transparent 50%) #202020;
+    radial-gradient(at 85% 73%, #9cd9eb 0px, transparent 50%) #f2f2f2;
   mix-blend-mode: var(--_mesh-gradient-blend-mode);
   /* colorffy.com thx */
 }

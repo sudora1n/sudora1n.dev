@@ -1,7 +1,6 @@
 ~~~
-title = "SOME BLOG"
-description = "Front matter"
-img = "/img/Lost-in-Random-Preview.jpg"
+title = "GITLER SAYS"
+description = "ABOUT ZELENSKY"
 ~~~
 ---
 __Advertisement :)__

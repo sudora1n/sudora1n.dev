@@ -30,6 +30,10 @@
         }
     },
     "blog": {
-        "back": "Back"
+        "back": "Back",
+        "read": "Read More",
+        "nav": {
+            "posts": "All posts"
+        }
     }
 }
