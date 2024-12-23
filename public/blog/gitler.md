@@ -3,7 +3,7 @@ title = "GITLER SAYS"
 description = "ABOUT ZELENSKY"
 ~~~
 ---
-__Advertisement :)__
+__GITLER PAGE :)__
 
 - __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
   resize in browser.

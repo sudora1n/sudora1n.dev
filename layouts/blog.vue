@@ -9,5 +9,7 @@
     <LayoutsFooter />
 
     <LayoutsToasts />
+
+    <LayoutsBlogPostList />
   </div>
 </template>
