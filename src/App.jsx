@@ -1,3 +1,5 @@
+import React from 'react';
+
 const skills = [
   { icon: 'API', title: 'Backend на Go', text: 'REST/gRPC API, ConnectRPC, Protobuf, WebSocket, бизнес-логика без лишней магии.' },
   { icon: 'SQL', title: 'SQL-backed systems', text: 'PostgreSQL, индексы, аналитические запросы, EXPLAIN ANALYZE, нормальная работа с данными.' },
